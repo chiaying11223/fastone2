@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastone Games | Red-Black-White Edition</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Style reference -->
+    <link rel="stylesheet" href="styles_c.css">
+</head>
+<body>
+
+    <!-- 1. Navbar -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <span>Fast</span><span class="text-red">One</span>
+            <span class="games-badge">GAMES</span>
+        </a>
+        <nav class="nav-links">
+            <a href="#home" class="active">HOME</a>
+            <a href="#about">COMPANY</a>
+            <a href="games_c.html">GAMES</a>
+            <a href="#contact">CONTACT US</a>
+        </nav>
+        <div class="nav-actions">
+            <!-- Simple Lang Picker -->
+            <div class="language-picker">
+                <button class="lang-btn">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="ENG" class="flag-icon">
+                    <span>ENG</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="badge-tag">REDEFINING ACTION</div>
+            <h1>SPEED & VICTORY</h1>
+            <p>Experience the ultimate high-contrast racing and gaming performance with our advanced Red-Black-White engine.</p>
+            <div class="hero-btns">
+                <button class="btn-primary" onclick="window.location.href='games_c.html'">PLAY GAMES</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About & Stats Section -->
+    <section class="about-section" id="about">
+        <div class="about-text">
+            <h2>Who We Are</h2>
+            <p>We are a highly experienced game development team devoted to creating original, energetic titles with an uncompromising standard of high-contrast bold visual styling.</p>
+        </div>
+        <div class="stats-bar-container">
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-number">500<span class="plus">+</span></div>
+                    <div class="stat-label">Operator Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100<span class="plus">%</span></div>
+                    <div class="stat-label">Safe & Secure</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24<span class="plus">/7</span></div>
+                    <div class="stat-label">Non-Stop Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Games Showcase Section -->
+    <section class="games-section" id="games">
+        <div class="section-title">
+            <h2>OUR <span>GAMES</span></h2>
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">ALL</button>
+                <button class="tab-btn" data-category="slots">SLOT</button>
+                <button class="tab-btn" data-category="fishing">FISHING</button>
+                <button class="tab-btn" data-category="table">TABLE & CARD</button>
+            </div>
+        </div>
+
+        <div class="games-grid">
+            <!-- Card 1: Lucky Jaguar -->
+            <div class="game-card" data-category="slots">
+                <div class="card-inner">
+                    <img src="image/Slot_Lucky Jaguar_1.png" alt="Lucky Jaguar">
+                    <div class="card-overlay">
+                        <h3>LUCKY JAGUAR</h3>
+                        <p>MAX WIN 8888X</p>
+                        <button class="btn-play">PLAY DEMO</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Money Pot -->
+            <div class="game-card" data-category="slots">
+                <div class="card-inner">
+                    <img src="image/Slot_Money Pot_1.png" alt="Money Pot">
+                    <div class="card-overlay">
+                        <h3>MONEY POT</h3>
+                        <p>MAX WIN 10000X</p>
+                        <button class="btn-play">PLAY DEMO</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Fortune Zombie -->
+            <div class="game-card" data-category="fishing">
+                <div class="card-inner">
+                    <img src="image/Fish_FORTUNE ZOMBIE_1.png" alt="Fortune Zombie">
+                    <div class="card-overlay">
+                        <h3>FORTUNE ZOMBIE</h3>
+                        <p>MAX WIN 500X</p>
+                        <button class="btn-play">PLAY DEMO</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Ultimate Texas Hold'e -->
+            <div class="game-card" data-category="table">
+                <div class="card-inner">
+                    <img src="image/Card_Ultimate Texas Hold'e_1.png" alt="Ultimate Texas Hold'e">
+                    <div class="card-overlay">
+                        <h3>TEXAS HOLD'EM</h3>
+                        <p>TABLE GAME</p>
+                        <button class="btn-play">PLAY DEMO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-col" style="flex: 1.5;">
+                <div class="footer-logo">FastOne <span style="color:var(--accent-red)">GAMES</span></div>
+                <p>Advanced Game Design delivering maximum visual intensity and responsiveness.</p>
+                <p style="margin-top: 15px;">✉️ info@fastone.com</p>
+            </div>
+            <div class="footer-col" style="flex: 1;">
+                <h4>GAMES</h4>
+                <a href="#">Slot</a><a href="#">Fishing</a><a href="#">Table Game</a>
+            </div>
+            <div class="footer-col" style="flex: 1;">
+                <h4>COMPANY</h4>
+                <a href="#about">About Us</a><a href="#">API docs</a><a href="#">Contact</a>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px; border-top: 1px solid #222; padding-top: 20px;">
+            <p>&copy; 2026 FastOne Games. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Demo Overlay -->
+    <div class="demo-overlay" id="demoOverlay">
+        <button class="floating-back-btn" id="demoBackBtn">← BACK</button>
+        <div class="demo-grid-container">
+            <div class="grid-item item-game">
+                <div class="game-frame" id="gameFrame">
+                    <div class="game-screen-mock">
+                        <button class="btn-frame-fs" id="frameFsBtn" title="Full Screen">⛶</button>
+                        <img src="" alt="Game Banner" class="game-banner" id="demoGameBanner">
+                        <div class="game-controls-overlay" id="demoStartOverlay">
+                            <div class="game-title-red" id="demoGameTitleFrame">GAME TITLE</div>
+                            <button class="btn-continue" id="demoStartBtn">CONTINUE</button>
+                        </div>
+                        <div class="interactive-game-area" id="interactiveArea" style="display:none;">
+                            <div class="slot-machine">
+                                <div class="reel" id="reel1">🍒</div><div class="reel" id="reel2">🍋</div><div class="reel" id="reel3">🔔</div>
+                            </div>
+                            <button class="btn-spin" id="spinBtn">SPIN</button>
+                            <div class="win-message" id="winMessage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item item-info">
+                <div class="demo-info-grid">
+                    <div class="info-grid-contents">
+                        <h2 id="demoGameTitle">Game Title</h2>
+                        <div class="dash-summary-cards">
+                            <div class="summary-card">
+                                <div class="card-label">MAX WIN</div>
+                                <div id="demoGameMaxWin" class="card-value">-</div>
+                            </div>
+                            <div class="summary-card">
+                                <div class="card-label">VOLATILITY</div>
+                                <div id="demoGameVolatility" class="card-value">-</div>
+                            </div>
+                        </div>
+                        <div class="specs-table">
+                            <div class="spec-row">
+                                <div class="spec-label">Type of game</div>
+                                <div id="demoGameType" class="spec-value">Slot</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-label">Special Features</div>
+                                <div id="demoSpecs" class="spec-value">-</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-label">Paylines</div>
+                                <div id="demoPaylines" class="spec-value">-</div>
+                            </div>
+                            <div class="spec-row">
+                                <div class="spec-label">Publish Time</div>
+                                <div id="demoPublishTime" class="spec-value">-</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-grid-image">
+                        <img id="demoGameLogo" alt="Game Banner">
+                    </div>
+                </div>
+                <div class="lang-support-box">
+                    <div class="lang-label">Supported Languages</div>
+                    <div class="lang-flags">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="UK">
+                        <img src="https://flagcdn.com/w40/cn.png" alt="CN">
+                        <img src="https://flagcdn.com/w40/th.png" alt="TH">
+                        <img src="https://flagcdn.com/w40/id.png" alt="ID">
+                        <img src="https://flagcdn.com/w40/vn.png" alt="VN">
+                        <img src="https://flagcdn.com/w40/jp.png" alt="JP">
+                        <img src="https://flagcdn.com/w40/kr.png" alt="KR">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item item-video">
+                <h3 class="dash-title">▶ PREVIEW VIDEO</h3>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <button class="btn-play-youtube" title="Play Preview"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item item-gallery">
+                <h3 class="dash-title">🖼 GAMEPLAY IMAGES</h3>
+                <div class="gallery-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox-overlay">
+        <span class="close-lightbox" id="closeLightbox">&times;</span>
+        <button class="lightbox-prev" id="lightboxPrev">&lt;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="Zoom-View">
+        </div>
+        <button class="lightbox-next" id="lightboxNext">&gt;</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main_c.js"></script>
+</body>
+</html>
